@@ -1,1 +1,1 @@
-# learning-AWS-practitioner-essentials
+# Learning-AWS-practitioner-essentials
