@@ -16,8 +16,6 @@ less than full capacity
 
 > **_NOTE:_**  Many of the activities of the roles marked with 🟠 falls under AWS's responsability when a organization moves to the cloud. The roles marked with 🟣 🔵 might move into the AWS system operations and DevOps administrator roles respectively.
     
-
-
 #### AWS Cloud Environment:
 Increased development **speed**
 Provide near-limitless **scale**
@@ -62,13 +60,11 @@ Provide near-limitless **scale**
 
  ***<div align="center">Amazon elastic compute cloud (EC2)</div>***
 
- Amazon elastic compute cloud (EC2):
-A virtual server
-The AWS service to gian access to virtual servers. It's highly flexible, cost effective and quick (secure, compute rezible capacity). AWS builds and secure the datacenters, puchase and install sesrvers, and the servers are online and ready to use
-* Multitenancy: Sharing underlying hardware between virtual machines. is manage by AWS
+The AWS service provides access to virtual servers. It's highly flexible, cost-effective, and quick (secure, compute rezible capacity). AWS builds and secure the datacenters, puchase and install sesrvers, and the servers are online and ready to use
+* Multitenancy: sharing underlying hardware between virtual machines. is manage by AWS
 
 
-##### Amazon EC2 configuration:
+### Amazon EC2 configuration:
 
 **<div align="center">(🚀 Launch  🖥️  Conect  📧 Use )</div>**
 
@@ -77,6 +73,24 @@ The AWS service to gian access to virtual servers. It's highly flexible, cost ef
 🚀 Instance type</br>
 * Vertical Scaling: EC2 instances are also resizable. You might start with a small instance, realize the application you are running is starting to max out that server, and then you can give that instance more memory and more CPU.</br>
 🚀Control over the Networking: Type of requests</br>
+
+### Amazon EC2 types:
+Each Amazon EC2 instance type is grouped under an instance family and are optimized for certain types of tasks. Instance types offer varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.
+* **General purpose instances:** Provide a balance of compute, memory, and networking resources (Application, gaming and backend services and small and medium databases)
+* **Compute optimized instances:** Ideal for compute-bound applications that benefits from high-performance processors for instans processing workloads that require processing many transactions in a single group.
+* **Memory optimized instances:** are designed to deliver fast performance for workloads that process arge datasets in memory for instnce workload that requires large amounts of data to be preloaded before running aplications (Ideal for high-performance databases)
+* **Accelerated computing instances:** use hardware accelerator or coprocessors, to perfomr some functions more efficiently than possible in software running on CPUs for instance floating-point number calculations, graphic processing and data pattern matching (ideal for streaming)
+* **Storage optimized instances:**  are designed for workloads that require high, sequential read and write access to large datasets on local storage. (Suitable for data warehousing applications)
+
+### Purchase options:
++ **On-Demand:** Ideal for short-term, irregular workloads that cannot be inerrupted. NO upfront cost or minimum contracts applu.
++ **Savings plans:** Enable to reduce your compute costs by committing to a consistent amount of compute usage for a 1 or 3-year term. This term commitment results in savings of up to 72% over ON-Demand costs
++ **Reserved instances:** are ideal for workloads with flexible start and end times, or that can withstand interruptions.
++ **Spot instances:** workloads that can be interrupted
++ **Dedicated host:** are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use.
+
+### Scalability and Elasticity:
+
 
 
 
