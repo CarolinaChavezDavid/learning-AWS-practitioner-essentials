@@ -39,7 +39,7 @@ Provide near-limitless **scale**
 * Artifitial intelligence
 
 <div align="center">
-<img width="500" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/929b35aa-0b4d-4152-9a1a-76d48137d718">
+<img width="300" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/929b35aa-0b4d-4152-9a1a-76d48137d718">
 </div
 
 
@@ -75,21 +75,38 @@ The AWS service provides access to virtual servers. It's highly flexible, cost-e
 🚀Control over the Networking: Type of requests</br>
 
 ### Amazon EC2 types:
-Each Amazon EC2 instance type is grouped under an instance family and are optimized for certain types of tasks. Instance types offer varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.
+Each Amazon EC2 instance type is grouped under an instance family and optimized for certain types of tasks. Instance types offer varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.
 * **General purpose instances:** Provide a balance of compute, memory, and networking resources (Application, gaming and backend services and small and medium databases)
-* **Compute optimized instances:** Ideal for compute-bound applications that benefits from high-performance processors for instans processing workloads that require processing many transactions in a single group.
-* **Memory optimized instances:** are designed to deliver fast performance for workloads that process arge datasets in memory for instnce workload that requires large amounts of data to be preloaded before running aplications (Ideal for high-performance databases)
-* **Accelerated computing instances:** use hardware accelerator or coprocessors, to perfomr some functions more efficiently than possible in software running on CPUs for instance floating-point number calculations, graphic processing and data pattern matching (ideal for streaming)
+* **Compute optimized instances:** Ideal for compute-bound applications that benefit from high-performance processors for instances processing workloads that require processing many transactions in a single group.
+* **Memory optimized instances:** are designed to deliver fast performance for workloads that process large datasets in memory for instance workload that requires large amounts of data to be preloaded before running aplications (Ideal for high-performance databases)
+* **Accelerated computing instances:** use hardware accelerator or coprocessors, to perform some functions more efficiently than possible in software running on CPUs for instance floating-point number calculations, graphic processing and data pattern matching (ideal for streaming)
 * **Storage optimized instances:**  are designed for workloads that require high, sequential read and write access to large datasets on local storage. (Suitable for data warehousing applications)
 
 ### Purchase options:
-+ **On-Demand:** Ideal for short-term, irregular workloads that cannot be inerrupted. NO upfront cost or minimum contracts applu.
-+ **Savings plans:** Enable to reduce your compute costs by committing to a consistent amount of compute usage for a 1 or 3-year term. This term commitment results in savings of up to 72% over ON-Demand costs
++ **On-Demand:** Ideal for short-term, irregular workloads that cannot be interrupted. No upfront cost or minimum contract applies.
++ **Savings plans:** Reduce your compute costs by committing to a consistent amount of compute usage for a 1- or 3-year term. This term commitment results in savings of up to 72% over ON-Demand costs
 + **Reserved instances:** are ideal for workloads with flexible start and end times, or that can withstand interruptions.
 + **Spot instances:** workloads that can be interrupted
 + **Dedicated host:** are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use.
 
 ### Scalability and Elasticity:
+**Scalability** involves beginning with only the resources you need and designing your architecture to automatically respond to changing demand by scaling out or in. 
+* **Amazon EC2 Auto Scaling:** Is service provide for Amazon EC2 instaces that alllows you to scaling process to happen automatically. Auto Scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.
+  * **Dynamic scaling** responds to changing demand.
+  * **Predictive scaling** automatically schedules the right number of Amazon EC2 instances based on predicted demand.
+  * When configuring the size of an auto scaling group, you can set ***minimum capacity***, ***Desired capacity*** and ***Maximum capacity***
+
+### Elastic Load Balancing:
+Is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. For example, if you have multiple Amazon EC2 instances, Elastic Load Balancing distributes the workload across the multiple instances so that no single instance has to carry the bulk of it. 
+Properly distribute traffic; high performance, cost-efficient, highly available, automatically scalable 
+
+<div class="row" align="center">
+    <img width="450" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/ee9834e8-4235-4c9e-87c0-3aa2ce7159f2">
+</div>
+
+
+
+
 
 
 
