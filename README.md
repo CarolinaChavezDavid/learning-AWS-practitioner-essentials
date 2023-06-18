@@ -30,6 +30,8 @@ Provide near-limitless **scale**
 
 ## AWS cloud practitioner essentials
 
+### Compute Services
+
 #### AWS servicing offer:
 * Compute
 * Storage
@@ -59,8 +61,9 @@ Provide near-limitless **scale**
 </div>
 
  ***<div align="center">Amazon elastic compute cloud (EC2)</div>***
-
-The AWS service provides access to virtual servers. It's highly flexible, cost-effective, and quick (secure, compute rezible capacity). AWS builds and secure the datacenters, puchase and install sesrvers, and the servers are online and ready to use
+ ***<div align="center">📙 Host traditional applications, full access to the OS</div>***
+The AWS service provides access to virtual servers. It's highly flexible, cost-effective, and quick (secure, compute rezible capacity). AWS builds and secure the datacenters, puchase and install sesrvers, and the servers are online and ready to use.
+With EC2 instances you are responsable for patching your instances when new software packages come out, setting up the scaling of those instances as well as ensuring that you've architected your solutions to be hosted in a highly available manner. 
 * Multitenancy: sharing underlying hardware between virtual machines. is manage by AWS
 
 
@@ -87,24 +90,69 @@ Each Amazon EC2 instance type is grouped under an instance family and optimized 
 + **Savings plans:** Reduce your compute costs by committing to a consistent amount of compute usage for a 1- or 3-year term. This term commitment results in savings of up to 72% over ON-Demand costs
 + **Reserved instances:** are ideal for workloads with flexible start and end times, or that can withstand interruptions.
 + **Spot instances:** workloads that can be interrupted
-+ **Dedicated host:** are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use.
++ **Dedicated host:** are physical servers with Amazon EC2 instance capacity that are fully dedicated to your use.
 
 ### Scalability and Elasticity:
 **Scalability** involves beginning with only the resources you need and designing your architecture to automatically respond to changing demand by scaling out or in. 
-* **Amazon EC2 Auto Scaling:** Is service provide for Amazon EC2 instaces that alllows you to scaling process to happen automatically. Auto Scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.
+* **Amazon EC2 Auto Scaling:** This is a service provided for Amazon EC2 instances that allows the scaling process to happen automatically. Auto-scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.
   * **Dynamic scaling** responds to changing demand.
   * **Predictive scaling** automatically schedules the right number of Amazon EC2 instances based on predicted demand.
   * When configuring the size of an auto scaling group, you can set ***minimum capacity***, ***Desired capacity*** and ***Maximum capacity***
 
 ### Elastic Load Balancing:
-Is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. For example, if you have multiple Amazon EC2 instances, Elastic Load Balancing distributes the workload across the multiple instances so that no single instance has to carry the bulk of it. 
+Is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. For example, if you have multiple Amazon EC2 instances, elastic load balancing distributes the workload across the multiple instances so that no single instance has to carry the bulk of it. 
 Properly distribute traffic; high performance, cost-efficient, highly available, automatically scalable 
 
 <div class="row" align="center">
     <img width="450" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/ee9834e8-4235-4c9e-87c0-3aa2ce7159f2">
 </div>
 
+### Messaging and queuing
+* **Monolitic application** Tughtly coupled components. Applications are made of multiple components. The components communicate with each other to transmit data, fulfill requests, and keep the application running.
+* **Microservices** Loosly coupled 
 
+When designing applications on AWS, you can take a microservices approach with services and components that fulfill different functions. Two services facilitate application integration: Amazon Simple Notification Service (Amazon SNS) and Amazon Simple Queue Service (Amazon SQS).
+
+* **Amazon SQS (Simple Queue Service)** is a message queuing service you can send, store and receive messages between software components at any volume
+  * **Payload** Data contain within a message.
+* **Amazon SNS (Simple Notification Service)**  is a publish/subscribe service. Using Amazon SNS topics, a publisher publishes messages to subscribers. 
+
+
+<div align="center">
+  <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/904edb1c-1aee-4129-8db6-2bfe40ec9bac">
+</div>
+
+ ***<div align="center">Amazon elastic compute cloud (EC2)</div>***
+  ***<div align="center">📙 Host short running functions, Service-oriented applications, event driven applications, no provisioning or managing servers</div>***
+
+ AWS Lambda is one serverless compute option. Lambda's a service that allows you to upload your code into what's called a Lambda function. Configure a trigger and from there, the service waits for the trigger. When the trigger is detected, the code is automatically run in a managed environment, an environment you do not need to worry too much about because it is automatically scalable, highly available and all of the maintenance in the environment itself is done by AWS.
+ 
+* **Serverless** You cannot see or access the underlying infrastructure that are hosting your application, means that your code runs on servers, but you do not need to provision or manage these servers
+
+> 💡 If you are looking to run Docker container-based workloads on AWS ( A ***container*** is standard way of package your code), you first need to choose your orchestration tool either **ECS** or **EKS**. Then you need to chose your platform. Do you want to run your containers on EC2 instances that you manage or in a serverless environment like AWS Fargate that is managed for you? 
+
+<div align="center">
+  <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/1abf31d8-7157-4192-ad53-5bc728665eee">
+</div>
+
+ ***<div align="center">Amazon elastic Container Service (Amazon ECS)</div>***
+ Is a highly scalable, high-performance container management system that enables you to run and scale containerized applications on AWS. 
+
+
+
+<div align="center">
+ <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/d44dfbe1-bd43-49e5-8dba-65cc854ed048">
+</div>
+
+ ***<div align="center">Amazon Elastic Kubernates Service (Amazon EKS)</div>***
+ Is a fully managed service that you can use to run Kubernetes on AWS. 
+
+ <div align="center">
+ <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e40ecf15-b8b5-48bf-9213-bf3fa149e7b5">
+</div>
+
+ ***<div align="center">Amazon Fargate</div>***
+ Is a container (Docker) orchestration tool
 
 
 
