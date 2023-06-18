@@ -22,7 +22,7 @@ Provide near-limitless **scale**
 **Innovation** to shared responsabilities model, innovate with technologies such as advanced analytics, IoT and automation at scale
 **Productivity** infrastructure, and security, automate compliance *AWS is responsible for security of the cloud and the customer is responsible for security in the cloud*
   ##### Roles
-  * Cloud architect: Is the subject matter expert for the team. Is the tipical lateral move for an IT solution Architect
+  * cloud architect: is the subject matter expert for the team. Is the tipical lateral move for an IT solution Architect
   * 🟣 AWS System Operation(SysOps):  It oversees the server, network and desktop teams
   * System Administrator: Must be proficient with configuration management and changes.
   * Security administrator
@@ -30,7 +30,9 @@ Provide near-limitless **scale**
 
 ## AWS cloud practitioner essentials
 
-### Compute Services
+### Cloud computing
+**The on-demand delivery of IT resources over the internet with pay-as-you-go pricing**
+
 
 #### AWS servicing offer:
 * Compute
@@ -152,7 +154,7 @@ When designing applications on AWS, you can take a microservices approach with s
 </div>
 
  ***<div align="center">Amazon Fargate</div>***
- Is a container (Docker) orchestration tool
+ is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. 
 
 
 
