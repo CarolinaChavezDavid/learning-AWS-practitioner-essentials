@@ -1,5 +1,7 @@
 # Learning-AWS-practitioner-essentials
 
+Here are my notes of the AWS Cloud practitioner essentials course.
+
 <img width="1190" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/14e7103b-fc64-4a6f-b0a8-f9b6946541d5">
 
 # Content <!-- omit in toc -->
@@ -164,7 +166,7 @@ When designing applications on AWS, you can take a microservices approach with s
 
  # AWS global infrastructure and releability
 
-Throughout the globe, AWS builds **Regions** to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
+Throughout the globe, AWS builds **Regions** ( are geographical isolated areaa that contains AWS resources) to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
 There's four business factors that go into choosing a Region. 
 
    1. Compliance with data governance and legal requirements
@@ -182,11 +184,43 @@ An Availability Zone is a single data center or a group of data centers within a
 </div>
 
 
+#### Edge location
+AWS Edge locations run **Amazon Cloudfront** (is a service that helps deliver data, video, applications, and APIs to customers around the world with low latency and high transfer speeds.) to help get content closer to your customers, no matter where they are in the world. An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery. Amazon CloudFront is a CDN (Content delivery network)
+
+>**How do I interact with these services** In AWS, everything is an API (Application Programing Interface) call.
+
+#### Interacting with AWS servies
+* **AWS Management console:** web-based interface for accessing and managing AWS services.
+   * Test envieroments
+   * View AWS bills
+   * View monitoring
+   * work with non-technical resources 
+* **AWS Command Line interface (CLI):** Make API calls using the terminal on you rmachien
+* **AWS Software Development Kits (SDKs):** Interact with AWS resources through varoius programming languages
+
+other manage tools you can manage your AWS environment
+
+
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/06f49308-f227-4bd8-9268-320117cc0d5b">
+   
+**AWS Elastic Beanstalk**
+is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you.
+Helps you to focus on your business application, not the infrastructure.
+* Adjust capacity
+* Load balancing
+* Automatic scaling
+* Application health monitoring
+
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/01ee8c6e-33f1-4805-90d8-85f3404c2324">
+   
+**AWS Cloud formation**
+Infrastructure as code tool used to define. awide variety of AWS resources. Supoort storage, database, analytics, machine learning 
 
 
 
-
-
+<div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/06f49308-f227-4bd8-9268-320117cc0d5b">
+</div>
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
