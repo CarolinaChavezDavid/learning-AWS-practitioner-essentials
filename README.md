@@ -2,6 +2,12 @@
 
 <img width="1190" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/14e7103b-fc64-4a6f-b0a8-f9b6946541d5">
 
+# Content <!-- omit in toc -->
+
+*   [AWS global infrastructure and releability](#AWS-global-infrastructure-and-releability)
+    *   [Hiding individual stats](#hiding-individual-stats)
+   
+
 #### Traditional on-premises model:
 highly manual
 expensive equipment 
@@ -156,7 +162,38 @@ When designing applications on AWS, you can take a microservices approach with s
  ***<div align="center">Amazon Fargate</div>***
  is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. 
 
+ # AWS global infrastructure and releability
 
+Throughout the globe, AWS builds **Regions** to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
+There's four business factors that go into choosing a Region. 
+
+   1. Compliance with data governance and legal requirements
+   2. Proximity to the costumer: Must avoid latency (The time it takes for data to be sent and received)
+   3. Feature availability
+   4. Pricing
+      
+#### Availavility zones
+An Availability Zone is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. This is close enough to have low latency (the time between when content requested and received) between Availability Zones. However, if a disaster occurs in one part of the Region, they are distant enough to reduce the chance that multiple Availability Zones are affected.
+
+> ⭐ Planning for failure and deploying applications across multiple Availability Zones is an important part of building a resilient and highly available architecture.
+
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/9c9b2f5d-1289-41f7-92c8-33be0451598f">
+</div>
+
+
+
+
+
+
+
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+</a>
 
 
 
