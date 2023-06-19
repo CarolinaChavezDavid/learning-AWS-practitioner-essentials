@@ -79,10 +79,10 @@ With EC2 instances you are responsable for patching your instances when new soft
 * Vertical Scaling: EC2 instances are also resizable. You might start with a small instance, realize the application you are running is starting to max out that server, and then you can give that instance more memory and more CPU.</br>
 🚀Control over the Networking: Type of requests</br>
 
-### Amazon EC2 types:
+### Amazon EC2 types (families):
 Each Amazon EC2 instance type is grouped under an instance family and optimized for certain types of tasks. Instance types offer varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.
 * **General purpose instances:** Provide a balance of compute, memory, and networking resources (Application, gaming and backend services and small and medium databases)
-* **Compute optimized instances:** Ideal for compute-bound applications that benefit from high-performance processors for instances processing workloads that require processing many transactions in a single group.
+* **Compute optimized instances:** Ideal for compute-bound applications that benefit from high-performance processors for instances processing workloads that require processing many transactions in a single group, batch procesing.
 * **Memory optimized instances:** are designed to deliver fast performance for workloads that process large datasets in memory for instance workload that requires large amounts of data to be preloaded before running aplications (Ideal for high-performance databases)
 * **Accelerated computing instances:** use hardware accelerator or coprocessors, to perform some functions more efficiently than possible in software running on CPUs for instance floating-point number calculations, graphic processing and data pattern matching (ideal for streaming)
 * **Storage optimized instances:**  are designed for workloads that require high, sequential read and write access to large datasets on local storage. (Suitable for data warehousing applications)
@@ -90,7 +90,7 @@ Each Amazon EC2 instance type is grouped under an instance family and optimized 
 ### Purchase options:
 + **On-Demand:** Ideal for short-term, irregular workloads that cannot be interrupted. No upfront cost or minimum contract applies.
 + **Savings plans:** Reduce your compute costs by committing to a consistent amount of compute usage for a 1- or 3-year term. This term commitment results in savings of up to 72% over ON-Demand costs
-+ **Reserved instances:** are ideal for workloads with flexible start and end times, or that can withstand interruptions.
++ **Reserved instances:** are ideal for workloads with flexible start and end times, or that can withstand interruptions. Contract lenght of 1 and 3 years.
 + **Spot instances:** workloads that can be interrupted
 + **Dedicated host:** are physical servers with Amazon EC2 instance capacity that are fully dedicated to your use.
 
