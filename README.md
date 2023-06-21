@@ -8,6 +8,7 @@ Here are my notes of the AWS Cloud practitioner essentials course.
 
 *   [AWS global infrastructure and releability](#AWS-global-infrastructure-and-releability)
     *   [Hiding individual stats](#hiding-individual-stats)
+*   [Networking](#Networking)
    
 
 #### Traditional on-premises model:
@@ -167,15 +168,15 @@ When designing applications on AWS, you can take a microservices approach with s
  # AWS global infrastructure and releability
 
 Throughout the globe, AWS builds **Regions** ( are geographical isolated areaa that contains AWS resources) to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
-There's four business factors that go into choosing a Region. 
+There's four business factors that go into choosing a region. 
 
    1. Compliance with data governance and legal requirements
-   2. Proximity to the costumer: Must avoid latency (The time it takes for data to be sent and received)
+   2. Proximity to the customer: Must avoid latency (The time it takes for data to be sent and received)
    3. Feature availability
    4. Pricing
       
 #### Availavility zones
-An Availability Zone is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. This is close enough to have low latency (the time between when content requested and received) between Availability Zones. However, if a disaster occurs in one part of the Region, they are distant enough to reduce the chance that multiple Availability Zones are affected.
+An Availability Zone is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. This is close enough to have low latency (the time between when content requested and received) between availability zones. However, if a disaster occurs in one part of the Region, they are distant enough to reduce the chance that multiple Availability Zones are affected.
 
 > ⭐ Planning for failure and deploying applications across multiple Availability Zones is an important part of building a resilient and highly available architecture.
 
@@ -189,14 +190,17 @@ AWS Edge locations run **Amazon Cloudfront** (is a service that helps deliver da
 
 >**How do I interact with these services** In AWS, everything is an API (Application Programing Interface) call.
 
-#### Interacting with AWS servies
-* **AWS Management console:** web-based interface for accessing and managing AWS services.
+#### Interacting with AWS servies - provisioning resources
+* **AWS Management console:** web-based interface for accessing and managing AWS services, includes wizards and workflows that you can use to complete tasks in AWS services.
    * Test envieroments
    * View AWS bills
    * View monitoring
    * work with non-technical resources 
-* **AWS Command Line interface (CLI):** Make API calls using the terminal on you rmachien
-* **AWS Software Development Kits (SDKs):** Interact with AWS resources through varoius programming languages
+* **AWS Command Line interface (CLI):** Make API calls using the terminal on your machinne, is used to automate actions for AWS services and applications through scripts.
+* **AWS Software Development Kits (SDKs):** Interact with AWS resources through varoius programming languages, enable you to develop AWS applications in supported programming languages.
+
+* **AWS outspot:**  Extend AWS infrastructure and services to your on-premises data center.
+
 
 other manage tools you can manage your AWS environment
 
@@ -218,16 +222,47 @@ Infrastructure as code tool used to define. awide variety of AWS resources. Supo
 
 
 
+# Networking
+
 <div align="center">
-<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/06f49308-f227-4bd8-9268-320117cc0d5b">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/9c3cc8c3-8b17-4bb6-90b4-523948c2f00e">
 </div>
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
-</a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
-</a>
+ ***<div align="center">Amazon Virtual Private Cloud (Amazon VPC)</div>***
+is essentially your own private network in AWS. A VPC allows you to define your private IP range for your AWS resources, and you place things like EC2 instances and ELBs inside of your VPC. You place your resources into different **Subnets**; Subnets are chunks of IP addresses in your VPC that allow you to group resources together. Control if resources are either privately or publicly available. In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.
+
+*  **Subnets** A subnet is a section of a VPC in which you can group resources based on security or operational needs. Subnets can be public or private. 
+   * **Public subnets** contain resources that need to be accessible by the public, such as an online store’s website.
+   * **Private subnets** contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories. 
+* 🚪 **Internet Gateway** allow public traffic from the internet to access your VPC.
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/5a7aa22c-b80d-4fac-9452-82f663b5ceeb">
+</div>
+
+* 🔒 **Virutal Private Gateway** allows protected internet traffic to enter into the VPC. A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
+
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/f462a9d7-50f6-4ca0-951b-f562869c4ea2">
+</div>
+
+* <img width="20" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/18b534b4-70d9-45f1-befb-47cf6bbda098"> **AWS direct connect** llows you to establish a completely private, dedicated fiber connection from your data center to AWS. You work with a Direct Connect partner in your area to establish this connection, AWS Direct Connect provides a physical line that connects your network to your AWS VPC
+
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/d18a040c-ad29-439c-9aef-05b8888e0f8c">
+</div>
+
+#### Network traffic in a VPC
+When a customer requests data from an application hosted in the AWS Cloud, this request is sent as a **packet**. A packet is a unit of data sent over the internet or a network. It enters into a VPC through an internet gateway. Before a packet can enter into a subnet or exit from a subnet, it checks for permissions. These permissions indicate who sent the packet and how the packet is trying to communicate with the resources in a subnet.
+The VPC component that checks packet permissions for subnets is a **network access control list (ACL).**
+
+**Network access control lists (ACLs)**: A network access control list (ACL) is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+
+<img width="430" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/6c68c6a1-89d4-49ce-b772-373e03cc633f">
+
+
+
+
+
 
 
 
