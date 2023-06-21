@@ -1,6 +1,6 @@
 # Learning-AWS-practitioner-essentials
 
-Here are my notes of the AWS Cloud practitioner essentials course.
+Here are my notes from the AWS Cloud Practitioner Essentials course.
 
 <img width="1190" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/14e7103b-fc64-4a6f-b0a8-f9b6946541d5">
 
@@ -251,14 +251,50 @@ is essentially your own private network in AWS. A VPC allows you to define your 
   <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/d18a040c-ad29-439c-9aef-05b8888e0f8c">
 </div>
 
+| **Security group**                                          | **Network ACL**                                                      |
+|-------------------------------------------------------------|----------------------------------------------------------------------|
+| Stateful                                                    | Stateless                                                            |
+| Intance level                                               | VPC level (getaway)                                                  |
+| Default: denies all inbound traffic and allows all outbound | Default: It is stateless and allows all inbound and outbound traffic |
+| exp:  door attendant building                               | exp: airport migration                                               |
+
 #### Network traffic in a VPC
 When a customer requests data from an application hosted in the AWS Cloud, this request is sent as a **packet**. A packet is a unit of data sent over the internet or a network. It enters into a VPC through an internet gateway. Before a packet can enter into a subnet or exit from a subnet, it checks for permissions. These permissions indicate who sent the packet and how the packet is trying to communicate with the resources in a subnet.
 The VPC component that checks packet permissions for subnets is a **network access control list (ACL).**
 
 **Network access control lists (ACLs)**: A network access control list (ACL) is a virtual firewall that controls inbound and outbound traffic at the subnet level.
 
-<img width="430" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/6c68c6a1-89d4-49ce-b772-373e03cc633f">
+<div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/6c68c6a1-89d4-49ce-b772-373e03cc633f">
+</div>
 
+ ***<div align="center">Amazon Route 53</div>***
+ is a DNS web service. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other domain registrars. This enables you to manage all of your domain names within a single location.
+ * **DNS (Domain Name System):** You can think of DNS as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address.
+<div align="center">
+   <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/57d0bf3d-98bf-44eb-82af-39af246cbecf">
+</div>
+
+
+
+**Routing policies**
+* Latency-based routing
+* Geolocation DNS
+* Geoproximity routing
+* Weighted round robin
+
+<div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/1a72d0e4-7b66-42e7-bac9-86b5a569d21e">
+</div>
+
+ ***<div align="center">Amazon Cloud front</div>***
+
+  is a content delivery service. It uses a network of edge locations to cache content and deliver content to customers all over the world.
+
+
+ <div align="center">
+ <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/b5e9ea92-7b09-4fbf-b20f-3d6c135647f2">
+</div>
 
 
 
