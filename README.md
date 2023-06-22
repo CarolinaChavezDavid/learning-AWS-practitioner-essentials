@@ -246,7 +246,7 @@ is essentially your own private network in AWS. A VPC allows you to define your 
   <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/f462a9d7-50f6-4ca0-951b-f562869c4ea2">
 </div>
 
-* <img width="20" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/18b534b4-70d9-45f1-befb-47cf6bbda098"> **AWS direct connect** llows you to establish a completely private, dedicated fiber connection from your data center to AWS. You work with a Direct Connect partner in your area to establish this connection, AWS Direct Connect provides a physical line that connects your network to your AWS VPC
+* <img width="20" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/18b534b4-70d9-45f1-befb-47cf6bbda098"> **AWS direct connect** Allows you to establish a completely private, dedicated fiber connection from your data center to AWS. You work with a Direct Connect partner in your area to establish this connection, AWS Direct Connect provides a physical line that connects your network to your AWS VPC
 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/d18a040c-ad29-439c-9aef-05b8888e0f8c">
@@ -307,9 +307,13 @@ is a content delivery service. It uses a network of edge locations to cache cont
 </div>
 
  ***<div align="center">Amazon Elastic Block Store (Amazon EBS)</div>***
+  **<div align="center">Block storage</div>**
 
 is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
 you define configuration as volume size and type
+
+> An Amazon EBS volume stores data in a single Availability Zone.
+
    * **Amazon EBS snapshots** Help you to take ***incremental backups*** of EBS volumes of data that needs to perssits. Incremetal means that only make backups of the block of data that has change since the last snapshot
 
 <div align="center">
@@ -317,10 +321,11 @@ you define configuration as volume size and type
 </div>
 
  ***<div align="center">Amazon Simple Storage Service (Amazon S3)</div>***
+  **<div align="center">Object storage</div>**
 
  is a service that provides object-level storage. Amazon S3 stores data as objects in buckets. Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB. You can also use the Amazon S3 versioning feature to track changes to your objects over time.
  
- In **object storage**, each object consists of data (image, video, text document, or any other type of file), metadata (information about what the data is, how it is used, the object size, and so on), and a key (unique identifier).
+In **object storage**, each object consists of data (image, video, text document, or any other type of file), metadata (information about what the data is, how it is used, the object size, and so on), and a key (unique identifier).
 
  > ⚠️ When a file in object storage is modified, the entire object is updated.
 
@@ -329,19 +334,86 @@ you define configuration as volume size and type
 
 | Amazon S3 class | Characteristics |  Applicability considerations |
 |:---:|:---:|:---:|
-| Amazon S3 Standard | * Designed for frequently accessed data<br>* Stores data in a minimum of three Availability Zones<br>* has a higher cost than other storage classes intended for <br>infrequently accessed data and archival storage. | websites, content distribution, and data analytics |
-| Amazon S3 <br>Standard-Infrequent Access (S3 Standard-IA) | * Ideal for infrequently accessed data<br>* Similar to Amazon S3 Standard but has a lower storage price <br>and higher retrieval price | ▪️ it automatically moves it to the infrequent or frequent access tier, <br>according to  the access days |
-| Amazon S3 <br>One zone-infrequent Access (S3 one Zone IA) | * Stores data in a single Availability Zone<br>* Has a lower storage price than Amazon S3 Standard-IA | *You want to save costs on storage.<br>*You can easily reproduce your data in the event of an <br>Availability Zone failure. |
+| Amazon S3 Standard | * Designed for frequently accessed data<br>* Stores data in a minimum of three Availability Zones<br>▪️ has a higher cost than other storage classes intended for <br>infrequently accessed data and archival storage. | ▪️ websites, content distribution, and data analytics |
+| Amazon S3 <br>Standard-Infrequent Access (S3 Standard-IA) | ▪️ Ideal for infrequently accessed data<br>* Similar to Amazon S3 Standard but has a lower storage price <br>and higher retrieval price | ▪️ it automatically moves it to the infrequent or frequent access tier, <br>according to the access days |
+| Amazon S3 <br>One zone-infrequent Access (S3 one Zone IA) | ▪️ Stores data in a single Availability Zone<br>* Has a lower storage price than Amazon S3 Standard-IA | *You want to save costs on storage.<br>*You can easily reproduce your data in the event of an <br>Availability Zone failure. |
 | Amazon S3 <br>Intelligent-Tiering | ▪️ Ideal for data with unknown or changing access patterns<br>▪️ Requires a small monthly monitoring and automation fee per object |  |
 | Amazon S3 <br>Glacier Instant Retrieval | ▪️  Works well for archived data that requires immediate access<br>▪️ Can retrieve objects within a few milliseconds |  |
-| Amazon S3 <br>Glacier Flexible Retrieval | ▪️  Low-cost storage designed for data archiving<br>▪️ Able to retrieve objects within a few minutes to hours | *storage class to store archived customer records or older <br>photos and video files. |
-| Amazon S3 <br>Glacier Deep Archive | *Lowest-cost object storage class ideal for archiving<br>* Able to retrieve objects within 12 to 48 hours |  |
+| Amazon S3 <br>Glacier Flexible Retrieval | ▪️  Low-cost storage designed for data archiving<br>▪️ Able to retrieve objects within a few minutes to hours | ▪️ storage class to store archived customer records or older <br>photos and video files. |
+| Amazon S3 <br>Glacier Deep Archive | ▪️ Lowest-cost object storage class ideal for archiving<br>▪️ Able to retrieve objects within 12 to 48 hours |  |
 | Amazon S3 <br>Outposts | ▪️ Creates S3 buckets on Amazon S3 Outposts<br>* Makes it easier to retrieve, store, and access data on AWS Outposts | ▪️ delivers object storage to your on-premises AWS Outposts environment.<br>▪️ It works well for workloads with local data residency requirements <br>that must satisfy demanding performance needs by keeping data close to <br>on-premises applications. |
 
 
 <div align="center">
-<img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/079d47ba-c50a-4e6f-b458-3b6b7fea5c32">
+<img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/079d47ba-c50a-4e6f-b458-3b6b7fea5c32">
 </div>
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/3ff8318c-7955-42fb-ac6c-4e9152b1be53">
+</div>
+
+ ***<div align="center">Amazon Elastic File System (Amazon EFS)</div>***
+ **<div align="center">File storage</div>**
+
+Is a scalable file system used with AWS Cloud services and on-premises resources. As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications.
+
+ In **file storage**, multiple clients (such as users, applications, servers, and so on) can access data that is stored in shared file folders. is ideal for use cases in which a large number of services and resources need to access the same data at the same time.
+
+ > Amazon EFS is a regional service. It stores data in and across multiple Availability Zones.
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e43e0c1f-9072-499c-b950-93108b1bcbaf">
+</div>
+
+ ***<div align="center">Amazon Relational Database Service (Amazon RDS)</div>***
+
+ Is a service that enables you to run relational databases in the AWS Cloud. Amazon RDS is a managed service that automates tasks such as hardware provisioning, database setup, patching, and backups.
+
+ * **Amazon RDS database engines**
+   * PostgreSQL
+   * MySQL
+   * MariaDB
+   * Oracle Database
+   * Microsoft SQL Server
+   * <img width="20" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/fde6a3dc-451b-413c-90e0-ac7a2ad94923"> **Amazon Aurora** is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases. Amazon Aurora helps to reduce your database costs by reducing unnecessary input/output (I/O) operations, while ensuring that your database resources remain reliable and available.  Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/192b3f6c-cd76-486b-b393-92bb71032901">
+</div>
+ 
+***<div align="center">Amazon DynamoDB</div>***
+Is a key-value database service. It delivers single-digit millisecond performance at any scale. is serverless, which means that you do not have to provision, patch, or manage servers. You also do not have to install, maintain, or operate software. As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. This makes it a suitable choice for use cases that require high performance while scaling.
+
+<div align="center">
+<img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/50512248-ef38-49ec-bd6d-facfac31d7f3">
+</div>
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/55c93cc8-916e-4b20-b454-b33e96cf5718">
+</div>
+
+ ***<div align="center">Amazon Redshift</div>***
+  **<div align="center">Data Warehouse</div>**
+is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/382dc1de-f512-44bf-baba-c5eff58725c0">
+</div>
+
+ ***<div align="center">AWS Database Migration Service (AWS DMS)</div>***
+
+enables you to migrate relational databases, nonrelational databases, and other types of data stores. With AWS DMS, you move data between a source database and a target database. The source and target databases can be of the same type or different types. During the migration, your source database remains operational, reducing downtime for any applications that rely on the database. There could be homogeneos or hetereogeneous migration. Other use cases:
+   * Development and test database migrations
+   * Database consolidation:  Combining several databases into a single database
+   * Continuous replication
+
+### Other services
+* <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e194eede-5655-4ab9-a82e-ed7a82f1b485"> **Amazon DocumentDB**  is a document database service that supports MongoDB workloads. (MongoDB is a document database program.)
+* <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/fa097690-5649-4056-b4d8-93de15aeede1"> **Amazon Neptune**  is a graph database service to build and run applications that work with highly connected datasets, such as recommendation engines, fraud detection, and knowledge graphs
+* <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/b3048b47-7ce1-449b-a05b-b7d6cb8d3ee1"> **Amazon Quantum Ledger Database (Amazon QLDB)**  is a ledger database service to review a complete history of all the changes that have been made to your application data.
+* <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/718efab0-8f7e-491e-b19c-e84fac227e66"> **Amazon Managed Blockchain** is a service that you can use to create and manage blockchain networks with open-source frameworks. Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.
+* <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/3083bb74-3978-46af-a25f-4863560abd6d"> **Amazon ElastiCache** is a service that adds caching layers on top of your databases to help improve the read times of common requests. It supports two types of data stores: Redis and Memcached.
+* <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/4e682c4d-6d97-4e54-992a-8bedaeb9decc"> **Amazon DynamoDB Accelerator (DAX)** is an in-memory cache for DynamoDB. It helps improve response times from single-digit milliseconds to microseconds.
 
 
 
