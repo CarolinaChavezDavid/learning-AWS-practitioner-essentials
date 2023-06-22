@@ -9,6 +9,7 @@ Here are my notes from the AWS Cloud Practitioner Essentials course.
 *   [AWS global infrastructure and releability](#AWS-global-infrastructure-and-releability)
     *   [Hiding individual stats](#hiding-individual-stats)
 *   [Networking](#Networking)
+*   [Storage and databases](#Storage-and-databases)
    
 
 #### Traditional on-premises model:
@@ -289,18 +290,58 @@ The VPC component that checks packet permissions for subnets is a **network acce
 
  ***<div align="center">Amazon Cloud front</div>***
 
-  is a content delivery service. It uses a network of edge locations to cache content and deliver content to customers all over the world.
+is a content delivery service. It uses a network of edge locations to cache content and deliver it to customers all over the world.
 
 
  <div align="center">
  <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/b5e9ea92-7b09-4fbf-b20f-3d6c135647f2">
 </div>
 
+# Storage and databases
+* 🗃️ **Instance Store** is a block level storage volumes that behave like a physical drives, provides temporary storage for an Amazon EC2 instance, is physically attached to the host computer for an EC2 instance, therefore has the same lifespan ***When the instance is terminated, you lose any data in the instance store.***
+
+> Amazon EC2 instances are virtual servers. If you start an instance from a stopped state, the instance might start on another host, where the previously used instance store volume does not exist.
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/53ac9370-f6fb-4e8e-853d-1a73301dd4a6">
+</div>
+
+ ***<div align="center">Amazon Elastic Block Store (Amazon EBS)</div>***
+
+is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+you define configuration as volume size and type
+   * **Amazon EBS snapshots** Help you to take ***incremental backups*** of EBS volumes of data that needs to perssits. Incremetal means that only make backups of the block of data that has change since the last snapshot
+
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/d21a420d-4c8b-41d2-938f-e09bfb5d3488">
+</div>
+
+ ***<div align="center">Amazon Simple Storage Service (Amazon S3)</div>***
+
+ is a service that provides object-level storage. Amazon S3 stores data as objects in buckets. Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB. You can also use the Amazon S3 versioning feature to track changes to your objects over time.
+ 
+ In **object storage**, each object consists of data (image, video, text document, or any other type of file), metadata (information about what the data is, how it is used, the object size, and so on), and a key (unique identifier).
+
+ > ⚠️ When a file in object storage is modified, the entire object is updated.
+
+* **Amazon S3 storage classes** you can select an Amazon S3 storage class considering How often you plan to retrieve your data, How available you need your data to be.
 
 
+| Amazon S3 class | Characteristics |  Applicability considerations |
+|:---:|:---:|:---:|
+| Amazon S3 Standard | * Designed for frequently accessed data<br>* Stores data in a minimum of three Availability Zones<br>* has a higher cost than other storage classes intended for <br>infrequently accessed data and archival storage. | websites, content distribution, and data analytics |
+| Amazon S3 <br>Standard-Infrequent Access (S3 Standard-IA) | * Ideal for infrequently accessed data<br>* Similar to Amazon S3 Standard but has a lower storage price <br>and higher retrieval price | ▪️ it automatically moves it to the infrequent or frequent access tier, <br>according to  the access days |
+| Amazon S3 <br>One zone-infrequent Access (S3 one Zone IA) | * Stores data in a single Availability Zone<br>* Has a lower storage price than Amazon S3 Standard-IA | *You want to save costs on storage.<br>*You can easily reproduce your data in the event of an <br>Availability Zone failure. |
+| Amazon S3 <br>Intelligent-Tiering | ▪️ Ideal for data with unknown or changing access patterns<br>▪️ Requires a small monthly monitoring and automation fee per object |  |
+| Amazon S3 <br>Glacier Instant Retrieval | ▪️  Works well for archived data that requires immediate access<br>▪️ Can retrieve objects within a few milliseconds |  |
+| Amazon S3 <br>Glacier Flexible Retrieval | ▪️  Low-cost storage designed for data archiving<br>▪️ Able to retrieve objects within a few minutes to hours | *storage class to store archived customer records or older <br>photos and video files. |
+| Amazon S3 <br>Glacier Deep Archive | *Lowest-cost object storage class ideal for archiving<br>* Able to retrieve objects within 12 to 48 hours |  |
+| Amazon S3 <br>Outposts | ▪️ Creates S3 buckets on Amazon S3 Outposts<br>* Makes it easier to retrieve, store, and access data on AWS Outposts | ▪️ delivers object storage to your on-premises AWS Outposts environment.<br>▪️ It works well for workloads with local data residency requirements <br>that must satisfy demanding performance needs by keeping data close to <br>on-premises applications. |
 
 
-
+<div align="center">
+<img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/079d47ba-c50a-4e6f-b458-3b6b7fea5c32">
+</div>
 
 
 
