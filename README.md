@@ -16,6 +16,9 @@ Here are my notes from the AWS Cloud Practitioner Essentials course.
 highly manual
 expensive equipment 
 less than full capacity
+
+<hr />
+
   ##### Roles
   * IT solution Architect
   * 🟠 System Administrator: keeps servers operational, it handles the on-site hardware and infrastructure, Install, superto and mantain computer system and servers
@@ -50,7 +53,7 @@ Provide near-limitless **scale**
 * Network Security
 * Block chain
 * Machine learning
-* Artifitial intelligence
+* Artificial intelligence
 
 <div align="center">
 <img width="300" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/929b35aa-0b4d-4152-9a1a-76d48137d718">
