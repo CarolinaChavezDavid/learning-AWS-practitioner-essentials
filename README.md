@@ -12,13 +12,14 @@ Here are my notes from the AWS Cloud Practitioner Essentials course.
 *   [Storage and databases](#Storage-and-databases)
 *   [Security](#Security)
    
+<hr />
 
 #### Traditional on-premises model:
 highly manual
 expensive equipment 
 less than full capacity
 
-<hr />
+
 
   ##### Roles
   * IT solution Architect
@@ -42,7 +43,11 @@ Provide near-limitless **scale**
   * Security administrator
   * 🔵 Devops administrator: Build and operate fast and scalable workflows, implementing continous build, integration, deployment and infrastructure code. Must be proficient with programming scripting languages and also oversee database and developer teams.
 
+<hr />
+
 # AWS cloud practitioner essentials
+
+
 
 # Cloud computing
  <details>
