@@ -42,9 +42,10 @@ Provide near-limitless **scale**
   * Security administrator
   * 🔵 Devops administrator: Build and operate fast and scalable workflows, implementing continous build, integration, deployment and infrastructure code. Must be proficient with programming scripting languages and also oversee database and developer teams.
 
-## AWS cloud practitioner essentials
+# AWS cloud practitioner essentials
 
-### Cloud computing
+# Cloud computing
+ <details>
 **The on-demand delivery of IT resources over the internet with pay-as-you-go pricing**
 
 
@@ -169,7 +170,10 @@ When designing applications on AWS, you can take a microservices approach with s
 
  ***<div align="center">Amazon Fargate</div>***
  is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. 
+ </details>
 
+  <details>
+     
  # AWS global infrastructure and releability
 
 Throughout the globe, AWS builds **Regions** ( are geographical isolated areaa that contains AWS resources) to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
@@ -225,7 +229,7 @@ Helps you to focus on your business application, not the infrastructure.
 **AWS Cloud formation**
 Infrastructure as code tool used to define. awide variety of AWS resources. Supoort storage, database, analytics, machine learning 
 
-
+ </details>v
 
 # Networking
 
@@ -429,6 +433,8 @@ enables you to migrate relational databases, nonrelational databases, and other 
 
 # Security
 
+<details>
+
 ### Share respoonsability model
 * **Costumer responsability**: "security in the cloud”, Customers are responsible for the security of everything that they create and put in the AWS Cloud.
 * **AWS responsability**: "security of the cloud”, AWS operates, manages, and controls the components at all layers of infrastructure. This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data centers from which services operate. 
@@ -485,6 +491,7 @@ it'ss a deliberate attempt to make a website or application unavailable to users
 <div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e8f8b676-5054-4a18-ac2f-696bd1d2b62d">
 </div>
+
  ***<div align="center">AWS Shield</div>***
  
 * **AWS Shield Standard** automatically protects all AWS customers at no cost. It protects your AWS resources from the most common, frequently occurring types of DDoS attacks. uses a variety of analysis techniques to detect malicious traffic in real time and automatically mitigates it. 
@@ -520,4 +527,41 @@ AWS WAF works together with Amazon CloudFront and an Application Load Balancer. 
 </div>
 
  ***<div align="center">Amazon GuardDuty</div>***
- is a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.                                                                                                           
+ is a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
+ 
+ </details>
+
+ # Monitoring and analytics
+
+  <details>
+
+  <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/751f4a27-1e34-48bb-9487-58841944ad10">
+</div>
+
+
+ ***<div align="center">Amazon CloudWatch</div>***
+
+  it's a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics. CloudWatch uses metrics to represent the data points for your resources. AWS services send metrics to CloudWatch. CloudWatch then uses these metrics to create graphs automatically that show how performance has changed over time
+
+    <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/a3ed7e94-2a97-47e6-9ec3-f3c8606b0be5">
+</div>
+
+ ***<div align="center">AWS CloudTrail</div>***
+ records API calls for your account. The recorded information includes the identity of the API caller, the time of the API call, the source IP address of the API caller, and more. You can think of CloudTrail as a “trail” of breadcrumbs (or a log of actions) that someone has left behind them.
+ * **CloudTrail Insights** his optional feature allows CloudTrail to automatically detect unusual API activities in your AWS account.
+
+     <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/91416f85-b2c9-456b-a9c4-d4e20b83c930">
+</div>
+
+***<div align="center">AWS Trusted advisor</div>***
+ is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
+
+ <div align="center">
+ <img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/ee16672a-6cc4-4899-84cb-e15f4e0d18e5">
+</div>
+ </details>
+
+
