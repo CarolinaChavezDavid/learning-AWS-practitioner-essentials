@@ -10,6 +10,7 @@ Here are my notes from the AWS Cloud Practitioner Essentials course.
     *   [Hiding individual stats](#hiding-individual-stats)
 *   [Networking](#Networking)
 *   [Storage and databases](#Storage-and-databases)
+*   [Security](#Security)
    
 
 #### Traditional on-premises model:
@@ -228,6 +229,8 @@ Infrastructure as code tool used to define. awide variety of AWS resources. Supo
 
 # Networking
 
+<details>
+   
 <div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/9c3cc8c3-8b17-4bb6-90b4-523948c2f00e">
 </div>
@@ -300,7 +303,11 @@ is a content delivery service. It uses a network of edge locations to cache cont
  <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/b5e9ea92-7b09-4fbf-b20f-3d6c135647f2">
 </div>
 
+</details>
+
 # Storage and databases
+<details>
+   
 * 🗃️ **Instance Store** is a block level storage volumes that behave like a physical drives, provides temporary storage for an Amazon EC2 instance, is physically attached to the host computer for an EC2 instance, therefore has the same lifespan ***When the instance is terminated, you lose any data in the instance store.***
 
 > Amazon EC2 instances are virtual servers. If you start an instance from a stopped state, the instance might start on another host, where the previously used instance store volume does not exist.
@@ -417,6 +424,18 @@ enables you to migrate relational databases, nonrelational databases, and other 
 * <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/718efab0-8f7e-491e-b19c-e84fac227e66"> **Amazon Managed Blockchain** is a service that you can use to create and manage blockchain networks with open-source frameworks. Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.
 * <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/3083bb74-3978-46af-a25f-4863560abd6d"> **Amazon ElastiCache** is a service that adds caching layers on top of your databases to help improve the read times of common requests. It supports two types of data stores: Redis and Memcached.
 * <img width="30" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/4e682c4d-6d97-4e54-992a-8bedaeb9decc"> **Amazon DynamoDB Accelerator (DAX)** is an in-memory cache for DynamoDB. It helps improve response times from single-digit milliseconds to microseconds.
+
+</details>
+
+# Security
+
+### Share respoonsability model
+* **Costumer responsability**“security in the cloud”
+
+<div align="center">
+<img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/bfea094c-bb09-465a-9fab-0c0043d815fd">
+</div>
+
 
 
 
