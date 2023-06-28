@@ -430,12 +430,50 @@ enables you to migrate relational databases, nonrelational databases, and other 
 # Security
 
 ### Share respoonsability model
-* **Costumer responsability**“security in the cloud”
+* **Costumer responsability**: "security in the cloud”, Customers are responsible for the security of everything that they create and put in the AWS Cloud.
+* **AWS responsability**: "security of the cloud”, AWS operates, manages, and controls the components at all layers of infrastructure. This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data centers from which services operate. 
 
 <div align="center">
 <img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/bfea094c-bb09-465a-9fab-0c0043d815fd">
 </div>
 
 
+<div align="center">
+<img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/034303f6-4da1-4b5c-8b83-234e03efaa03">
+</div>
 
+ ***<div align="center">AWS Identity and Access Management</div>***
+
+ IAM enables you to manage access to AWS services and resources securely.
+
+* **IAM users, groups, and roles**
+    * **AWS account root user**
+
+<div align="center">
+<img width="700" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/6e6a4dcb-e07c-4bba-8a2a-1b64952d689a">
+</div>
+
+***Do not use the root user for everyday tasks.*** 
+   * **IAM users** it's an identity that you create in AWS. It represents the person or application that interacts with AWS services and resources. It consists of a name and credentials. By default, when you create a new IAM user in AWS, it has no permissions associated with it. you must grant the IAM user the necessary permissions.
+     
+* **IAM policies** it's a document that allows or denies permissions to AWS services and resources.
+
+<div align="center">
+  <img width="300" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/5ece4b17-2930-4129-95e6-0dded6267a5e">
+
+</div>
+
+* **IAM groups**  it's a collection of IAM users. When you assign an IAM policy to a group, all users in the group are granted permissions specified by the policy.
+* **IAM groups** it's an identity that you can assume to gain temporary access to permissions. Before an IAM user, application, or service can assume an IAM role, they must be granted permissions to switch to the role. When someone assumes an IAM role, they abandon all previous permissions that they had under a previous role and assume the permissions of the new role.  
+* **Multi-factor authentication** extra layer of security
+
+### AWS Organizations
+You can use AWS Organizations to consolidate and manage multiple AWS accounts within a central location.When you create an organization, AWS Organizations automatically creates a root, which is the parent container for all the accounts in your organization. In AWS Organizations, you can centrally control permissions for the accounts in your organization by using service control policies (SCPs). **SCPs** enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.
+* **Organizational units** In AWS Organizations, you can group accounts into organizational units (OUs) to make it easier to manage accounts with similar business or security requirements you can apply service control policies (SCPs) to the organization root, an individual member account, or an OU. 
+
+### compliance
+
+* **AWS Artifact** it's a service that provides on-demand access to AWS security and compliance reports and select online agreements.
+  * **AWS Artifact Agreements** you can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).
+  * **AWS Artifact Reports** provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations. AWS Artifact Reports remains up to date with the latest reports released.
 
