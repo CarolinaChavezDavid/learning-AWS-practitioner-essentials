@@ -23,7 +23,7 @@ less than full capacity
   ##### Roles
   * IT solution Architect
   * 🟠 System Administrator: keeps servers operational, it handles the on-site hardware and infrastructure, Install, superto and mantain computer system and servers
-  * 🟣 Network administrator: Desing, install, configura, and maintain LAN and WAN
+  * 🟣 Network administrator: Desing, install, configurate, and maintain LAN and WAN
   * 🟣 Desktop administrator: Desploy, configure, secure, manage, and monitor devices and applications.
   * 🔵 Application administrator: Keep the organization´s applicaction up and running.
   * 🟠 Database administrator: Direct or perform installation and maintenance of databases in the IT enviroment.
@@ -477,3 +477,47 @@ You can use AWS Organizations to consolidate and manage multiple AWS accounts wi
   * **AWS Artifact Agreements** you can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).
   * **AWS Artifact Reports** provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations. AWS Artifact Reports remains up to date with the latest reports released.
 
+  ### Denial-of-service attacks
+
+it'ss a deliberate attempt to make a website or application unavailable to users.
+* **Distributed denial-of-service attacks** In a distributed denial-of-service (DDoS) attack, multiple sources are used to start an attack that aims to make a website or application unavailable. This can come from a group of attackers, or even a single attacker. The single attacker can use multiple infected computers (also known as “bots”) to send excessive traffic to a website or application.
+
+<div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e8f8b676-5054-4a18-ac2f-696bd1d2b62d">
+</div>
+ ***<div align="center">AWS Shield</div>***
+ 
+* **AWS Shield Standard** automatically protects all AWS customers at no cost. It protects your AWS resources from the most common, frequently occurring types of DDoS attacks. uses a variety of analysis techniques to detect malicious traffic in real time and automatically mitigates it. 
+* **AWS Artifact Reports** is a paid service that provides detailed attack diagnostics and the ability to detect and mitigate sophisticated DDoS attacks. It also integrates with other services such as Amazon CloudFront, Amazon Route 53, and Elastic Load Balancing. Additionally, you can integrate AWS Shield with AWS WAF by writing custom rules to mitigate complex DDoS attacks.
+
+  <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/60fc59f9-2900-4b8a-9eab-082043614615">
+</div>
+
+ ***<div align="center">AWS Key Management Service (AWS KMS)</div>***
+it enables you to perform encryption operations through the use of cryptographic keys. A cryptographic key is a random string of digits used for locking (encrypting) and unlocking (decrypting) data. You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
+
+ <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/09acd862-dd08-478f-8680-3fa6f5fd83ba">
+</div>
+
+ ***<div align="center">AWS WAF</div>***
+ it's a web application firewall that lets you monitor network requests that come into your web applications. 
+
+AWS WAF works together with Amazon CloudFront and an Application Load Balancer. Recall the network access control lists that you learned about in an earlier module. AWS WAF works in a similar way to block or allow traffic. However, it does this by using a web access control list (ACL) to protect your AWS resources. 
+
+
+ <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e1373d65-4de1-4506-bcce-85ccdb843f5c">
+</div>
+
+ ***<div align="center">Amazon inspector</div>***
+ Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. It checks applications for security vulnerabilities and deviations from security best practices, such as open access to Amazon EC2 instances and installations of vulnerable software versions.
+
+ 
+ <div align="center">
+<img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/3591f914-ad18-4c7b-bfe0-31b947b571c1">
+</div>
+
+ ***<div align="center">Amazon GuardDuty</div>***
+ is a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.                                                                                                           
