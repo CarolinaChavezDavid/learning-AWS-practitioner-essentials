@@ -170,11 +170,14 @@ When designing applications on AWS, you can take a microservices approach with s
 
  ***<div align="center">Amazon Fargate</div>***
  is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. 
+ 
  </details>
 
-  <details>
+
      
  # AWS global infrastructure and releability
+
+   <details>
 
 Throughout the globe, AWS builds **Regions** ( are geographical isolated areaa that contains AWS resources) to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
 There's four business factors that go into choosing a region. 
@@ -229,7 +232,7 @@ Helps you to focus on your business application, not the infrastructure.
 **AWS Cloud formation**
 Infrastructure as code tool used to define. awide variety of AWS resources. Supoort storage, database, analytics, machine learning 
 
- </details>v
+ </details>
 
 # Networking
 
