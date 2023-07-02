@@ -483,6 +483,8 @@ enables you to migrate relational databases, nonrelational databases, and other 
 
 ### AWS Organizations
 You can use AWS Organizations to consolidate and manage multiple AWS accounts within a central location.When you create an organization, AWS Organizations automatically creates a root, which is the parent container for all the accounts in your organization. In AWS Organizations, you can centrally control permissions for the accounts in your organization by using service control policies (SCPs). **SCPs** enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.
+The default maximum number of accounts allowed for an organization is 4, but you can contact AWS Support to increase your quota, if needed.
+
 * **Organizational units** In AWS Organizations, you can group accounts into organizational units (OUs) to make it easier to manage accounts with similar business or security requirements you can apply service control policies (SCPs) to the organization root, an individual member account, or an OU. 
 
 ### compliance
@@ -572,5 +574,73 @@ AWS WAF works together with Amazon CloudFront and an Application Load Balancer. 
 </div>
 
  </details>
+
+  # Pricing and support
+
+<details>
+
+### Free tier
+   Enables you to begin using certain services without having to worry about incurring costs for the specified period. 
+   * **Always free** These offers do not expire and are available to all AWS customers. For example, AWS Lambda allows 1 million free requests and up to 3.2 million seconds of compute time per month. Amazon DynamoDB allows 25 GB of free storage per month.
+   * **12 months free** These offers are free for 12 months following your initial sign-up date to AWS. Examples include specific amounts of Amazon S3 Standard Storage, thresholds for monthly hours of Amazon EC2 compute time, and amounts of Amazon CloudFront data transfer out.
+   * **Trials** Short-term free trial offers start from the date you activate a particular service. The length of each trial might vary by number of days or the amount of usage in the service.
+For example, Amazon Inspector offers a 90-day free trial. Amazon Lightsail (a service that enables you to run virtual private servers) offers 750 free hours of usage over a 30-day period.
+
+### AWS pricing
+   * **Pay for what you use** For each service, you pay for exactly the amount of resources that you actually use, without requiring long-term contracts or complex licensing. .
+   * **Pay less when you reserve** Some services offer reservation options that provide a significant discount compared to On-Demand Instance pricing.
+For example, suppose that your company is using Amazon EC2 instances for a workload that needs to run continuously. You might choose to run this workload on Amazon EC2 Instance Savings Plans, because the plan allows you to save up to 72% over the equivalent On-Demand Instance capacity. A Compute Savings Plan offers lower compute costs in exchange for committing to a consistent amount of usage over a 1-year or 3-year term. 
+   * **Pay less with volume-based discounts when you use more** Some services offer tiered pricing, so the per-unit cost is incrementally lower with increased usage.
+For example, the more Amazon S3 storage space you use, the less you pay for it per GB.
+
+### AWS pricing
+You can create budgets to plan your service usage, service costs, and instance reservations. The information in AWS Budgets updates three times a day. This helps you to accurately determine how close your usage is to your budgeted amounts or to the AWS Free Tier limits. In AWS Budgets, you can also set custom alerts when your usage exceeds (or is forecasted to exceed) the budgeted amount.
+
+### AWS cost explorer
+is a tool that enables you to visualize, understand, and manage your AWS costs and usage over time. AWS Cost Explorer includes a default report of the costs and usage for your top five cost-accruing AWS services. You can apply custom filters and groups to analyze your data. For example, you can view resource usage at the hourly level.
+
+### AWS Support
+
+AWS offers four different Support plans to help you troubleshoot issues, lower costs, and efficiently use AWS services.. 
+   * **Basic Support** is free for all AWS customers. It includes access to whitepapers, documentation, and support communities. With Basic Support, you can also contact AWS for billing questions and service limit increases. With Basic Support, you have access to a limited selection of AWS Trusted Advisor checks. Additionally, you can use the AWS Personal Health Dashboard, a tool that provides alerts and remediation guidance when AWS is experiencing events that may affect you. 
+   * **Developer support**
+      * Best practice guidance
+      * Client-side diagnostic tools
+      * Building-block architecture support, which consists of guidance for how to use AWS offerings, features, and services together
+   * **Business Support**
+      * Use-case guidance to identify AWS offerings, features, and services that can best support your specific needs
+      * All AWS Trusted Advisor checks
+      * Limited support for third-party software, such as common operating systems and application stack components
+   * **Enterprise On-Ramp Support**
+      * A pool of Technical Account Managers to provide proactive guidance and coordinate access to programs and AWS experts
+        * Consultative review and architecture guidance (one per year)
+        * Infrastructure Event Management support (one per year)
+        * Support automation workflows
+        * 30 minutes or less response time for business-critical issues
+      * A Cost Optimization workshop (one per year)
+      * A Concierge support team for billing and account assistance
+      * Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
+   * **Enterprise Support**
+      * A designated Technical Account Manager to provide proactive guidance and coordinate access to programs and AWS experts
+        * Consultative review and architecture guidance 
+        * Infrastructure Event Management support
+        * Cost Optimization Workshop and tools
+        * Support automation workflows
+        * 15 minutes or less response time for business-critical issues
+      * A Concierge support team for billing and account assistance
+      * Training and Game Days to drive innovatio
+      * Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
+    
+**Technical Account Manager (TAM)**
+The TAM is your primary point of contact at AWS. If your company subscribes to Enterprise Support or Enterprise On-Ramp, your TAM educates, empowers, and evolves your cloud journey across the full range of AWS services. TAMs provide expert engineering guidance, help you design solutions that efficiently integrate AWS services, assist with cost-effective and resilient architectures, and provide direct access to AWS programs and a broad community of experts
+
+### AWS Marketplace
+is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS. 
+
+<div align="center">
+<img width="812" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/bf0ac97b-057e-4199-bd14-c65335b14c34">
+</div>
+
+</details>
 
 
