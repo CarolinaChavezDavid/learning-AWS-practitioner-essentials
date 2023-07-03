@@ -4,16 +4,9 @@ Here are my notes from the AWS Cloud Practitioner Essentials course.
 
 <img width="1190" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/14e7103b-fc64-4a6f-b0a8-f9b6946541d5">
 
-# Content <!-- omit in toc -->
+# Cloud roles
 
-*   [AWS global infrastructure and releability](#AWS-global-infrastructure-and-releability)
-    *   [Hiding individual stats](#hiding-individual-stats)
-*   [Networking](#Networking)
-*   [Storage and databases](#Storage-and-databases)
-*   [Security](#Security)
-   
-<hr />
-
+<details>
 #### Traditional on-premises model:
 highly manual
 expensive equipment 
@@ -43,11 +36,15 @@ Provide near-limitless **scale**
   * Security administrator
   * 🔵 Devops administrator: Build and operate fast and scalable workflows, implementing continous build, integration, deployment and infrastructure code. Must be proficient with programming scripting languages and also oversee database and developer teams.
 
-<hr />
+</details>
+
+
 
 # AWS cloud practitioner essentials
 
 
+
+<hr />
 
 # Cloud computing
  <details>
