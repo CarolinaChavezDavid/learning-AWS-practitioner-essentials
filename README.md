@@ -141,7 +141,7 @@ When designing applications on AWS, you can take a microservices approach with s
   <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/904edb1c-1aee-4129-8db6-2bfe40ec9bac">
 </div>
 
- ***<div align="center">Amazon elastic compute cloud (EC2)</div>***
+ ***<div align="center">Amazon Lambda</div>***
   ***<div align="center">📙 Host short running functions, Service-oriented applications, event driven applications, no provisioning or managing servers</div>***
 
  AWS Lambda is one serverless compute option. Lambda's a service that allows you to upload your code into what's called a Lambda function. Configure a trigger and from there, the service waits for the trigger. When the trigger is detected, the code is automatically run in a managed environment, an environment you do not need to worry too much about because it is automatically scalable, highly available and all of the maintenance in the environment itself is done by AWS.
