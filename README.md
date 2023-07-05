@@ -1,3 +1,4 @@
+
 # Learning-AWS-practitioner-essentials
 
 Here are my notes from the AWS Cloud Practitioner Essentials course.
@@ -266,6 +267,10 @@ is essentially your own private network in AWS. A VPC allows you to define your 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/d18a040c-ad29-439c-9aef-05b8888e0f8c">
 </div>
+
+
+**Security group** is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance. By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom rules to configure which traffic should be allowed or denied.
+
 
 | **Security group**                                          | **Network ACL**                                                      |
 |-------------------------------------------------------------|----------------------------------------------------------------------|
