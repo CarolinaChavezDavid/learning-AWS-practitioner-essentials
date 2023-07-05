@@ -570,6 +570,11 @@ AWS WAF works together with Amazon CloudFront and an Application Load Balancer. 
  <img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/ee16672a-6cc4-4899-84cb-e15f4e0d18e5">
 </div>
 
+
+* The **Fault Tolerance** category includes checks to help you improve your applications’ availability and redundancy.
+* The **Security category** includes checks that help you to review your permissions and identify which AWS security features to enable.
+* The **Cost Optimization** category includes checks for unused or idle resources that could be eliminated and provide cost savings.
+  
  </details>
 
   # Pricing and support
