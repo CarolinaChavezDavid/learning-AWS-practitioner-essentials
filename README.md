@@ -367,6 +367,8 @@ In **object storage**, each object consists of data (image, video, text document
 | Amazon S3 <br>Glacier Deep Archive | ▪️ Lowest-cost object storage class ideal for archiving<br>▪️ Able to retrieve objects within 12 to 48 hours |  |
 | Amazon S3 <br>Outposts | ▪️ Creates S3 buckets on Amazon S3 Outposts<br>* Makes it easier to retrieve, store, and access data on AWS Outposts | ▪️ delivers object storage to your on-premises AWS Outposts environment.<br>▪️ It works well for workloads with local data residency requirements <br>that must satisfy demanding performance needs by keeping data close to <br>on-premises applications. |
 
+> In the Amazon S3 Intelligent-Tiering storage class, Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, Amazon S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, Amazon S3 Standard.
+
 
 <div align="center">
 <img width="1000" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/079d47ba-c50a-4e6f-b458-3b6b7fea5c32">
