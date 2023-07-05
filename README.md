@@ -701,10 +701,11 @@ It's a collection of physical devices that help to physically transport up to ex
       * Compute: 52 vCPUs, 208 GiB of memory, and an optional NVIDIA Tesla V100 GPU. Devices run Amazon EC2 sbe-c and sbe-g instances, which are equivalent to C5, M5a, G3, and P3 instances.
 * **AWS Snowmobile** is an exabyte-scale data transfer service used to move large amounts of data to AWS. You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi trailer truck.
 
-* Amazon SageMaker, you can quickly and easily begin working on machine learning projects. You do not need to follow the traditional process of manually bringing together separate tools and workflows.
-* Amazon Textract is a machine learning service that automatically extracts text and data from scanned documents.
-* Amazon Lex is a service that enables you to build conversational interfaces using voice and text.
-* AWS DeepRacer is an autonomous 1/18 scale race car that you can use to test reinforcement learning models.
+* **Amazon SageMaker**, you can quickly and easily begin working on machine learning projects. You do not need to follow the traditional process of manually bringing together separate tools and workflows.
+* **Amazon Textract** is a machine learning service that automatically extracts text and data from scanned documents.
+* **Amazon Lex** is a service that enables you to build conversational interfaces using voice and text.
+* **AWS DeepRacer** is an autonomous 1/18 scale race car that you can use to test reinforcement learning models.
+* **Argumented AI** Amazon Augmented AI (Amazon A2I) provides built-in human review workflows for common machine learning use cases, such as content moderation and text extraction from documents. With Amazon A2I, you can also create your own workflows for machine learning models built on Amazon SageMaker or any other tools.
 
 
 
