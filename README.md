@@ -49,6 +49,7 @@ Provide near-limitless **scale**
 <hr />
 
 # Cloud computing
+
 **The on-demand delivery of IT resources over the internet with pay-as-you-go pricing**
 
  <details>
