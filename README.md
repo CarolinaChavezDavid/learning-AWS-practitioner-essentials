@@ -8,6 +8,7 @@ Here are my notes from the AWS Cloud Practitioner Essentials course.
 # Cloud roles
 
 <details>
+  
 #### Traditional on-premises model:
 highly manual
 expensive equipment 
@@ -48,8 +49,9 @@ Provide near-limitless **scale**
 <hr />
 
 # Cloud computing
- <details>
 **The on-demand delivery of IT resources over the internet with pay-as-you-go pricing**
+
+ <details>
 
 
 #### AWS servicing offer:
