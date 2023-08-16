@@ -223,7 +223,10 @@ AWS Edge locations run **Amazon Cloudfront** (is a service that helps deliver da
 other manage tools you can manage your AWS environment
 
 
+<div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/06f49308-f227-4bd8-9268-320117cc0d5b">
+</div>
+
    
 **AWS Elastic Beanstalk**
 is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you.
@@ -233,7 +236,9 @@ Helps you to focus on your business application, not the infrastructure.
 * Automatic scaling
 * Application health monitoring
 
+<div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/01ee8c6e-33f1-4805-90d8-85f3404c2324">
+</div>
    
 **AWS Cloud formation**
 Infrastructure as code tool used to define. awide variety of AWS resources. Supoort storage, database, analytics, machine learning 
