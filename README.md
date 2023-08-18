@@ -254,7 +254,7 @@ Infrastructure as code tool used to define. awide variety of AWS resources. Supo
 </div>
 
  ***<div align="center">Amazon Virtual Private Cloud (Amazon VPC)</div>***
-is essentially your own private network in AWS. A VPC allows you to define your private IP range for your AWS resources, and you place things like EC2 instances and ELBs inside of your VPC. You place your resources into different **Subnets**; Subnets are chunks of IP addresses in your VPC that allow you to group resources together. Control if resources are either privately or publicly available. In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.
+Is essentially your own private network in AWS. A VPC allows you to define your private IP range for your AWS resources, and you place things like EC2 instances and ELBs inside of your VPC. You place your resources into different **Subnets**; Subnets are chunks of IP addresses in your VPC that allow you to group resources together. Control if resources are either privately or publicly available. In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.
 
 *  **Subnets** A subnet is a section of a VPC in which you can group resources based on security or operational needs. Subnets can be public or private. 
    * **Public subnets** contain resources that need to be accessible by the public, such as an online store’s website.
@@ -318,7 +318,7 @@ The VPC component that checks packet permissions for subnets is a **network acce
 
  ***<div align="center">Amazon Cloud front</div>***
 
-is a content delivery service. It uses a network of edge locations to cache content and deliver it to customers all over the world.
+Is a content delivery service. It uses a network of edge locations to cache content and deliver it to customers all over the world.
 
 
  <div align="center">
@@ -519,24 +519,26 @@ it'ss a deliberate attempt to make a website or application unavailable to users
 * **AWS Shield Standard** automatically protects all AWS customers at no cost. It protects your AWS resources from the most common, frequently occurring types of DDoS attacks. uses a variety of analysis techniques to detect malicious traffic in real time and automatically mitigates it. 
 * **AWS Artifact Reports** is a paid service that provides detailed attack diagnostics and the ability to detect and mitigate sophisticated DDoS attacks. It also integrates with other services such as Amazon CloudFront, Amazon Route 53, and Elastic Load Balancing. Additionally, you can integrate AWS Shield with AWS WAF by writing custom rules to mitigate complex DDoS attacks.
 
-  <div align="center">
+<div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/60fc59f9-2900-4b8a-9eab-082043614615">
 </div>
 
  ***<div align="center">AWS Key Management Service (AWS KMS)</div>***
+ 
 it enables you to perform encryption operations through the use of cryptographic keys. A cryptographic key is a random string of digits used for locking (encrypting) and unlocking (decrypting) data. You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
 
- <div align="center">
+<div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/09acd862-dd08-478f-8680-3fa6f5fd83ba">
 </div>
 
  ***<div align="center">AWS WAF</div>***
+ 
  it's a web application firewall that lets you monitor network requests that come into your web applications. 
 
 AWS WAF works together with Amazon CloudFront and an Application Load Balancer. Recall the network access control lists that you learned about in an earlier module. AWS WAF works in a similar way to block or allow traffic. However, it does this by using a web access control list (ACL) to protect your AWS resources. 
 
 
- <div align="center">
+<div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/e1373d65-4de1-4506-bcce-85ccdb843f5c">
 </div>
 
