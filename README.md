@@ -185,7 +185,7 @@ When designing applications on AWS, you can take a microservices approach with s
 
    <details>
 
-Throughout the globe, AWS builds **Regions** ( are geographical isolated areaa that contains AWS resources) to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
+Throughout the globe, AWS builds **Regions** (geographical isolated areas that contains AWS resources) to be closest to where the business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, Ohio. Inside each Region, we have multiple data centers that have all the compute, storage, and other services you need to run your applications
 There's four business factors that go into choosing a region. 
 
    1. Compliance with data governance and legal requirements
