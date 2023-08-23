@@ -241,7 +241,7 @@ Helps you to focus on your business application, not the infrastructure.
 </div>
    
 **AWS Cloud formation**
-Infrastructure as code tool used to define. awide variety of AWS resources. Supoort storage, database, analytics, machine learning 
+Is a Infrastructure as code tool, used to define a wide variety of AWS resources. Suport storage, database, analytics, machine learning.
 
  </details>
 
