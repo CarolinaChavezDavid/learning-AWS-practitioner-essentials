@@ -71,6 +71,21 @@ Provide near-limitless **scale**
 * **Client**: Can be a web browser or desktop application that a person interacts with to make requests to computer servers.
 * **Server**: Can be services such as Amazon Elastic Compute Cloud (Amazon EC2), a type of virtual server.
 * **Cloud Computing**:is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing.
+ 
+#### Types of cloud computing:
+
+* **Infrastructure as a services (IaaS)** provide building blocks for cloud IT, networking, computers, data storage space, highest level of flexibility and easy parallel with raditional on-premises IT
+* **Platform as a services (PaaS)** Removes the need for your organization to manage the underlying infrastructure.
+* **Software as a Service (SaaS)** Compled product that is run and managed by the services provider.
+
+#### Cloud Computing advantages:
+
+* Trade capital expense (CAPEX)for operational expense (OPEX). Reduce total cost of ownership (TCO)
+* Benefit from massive economies of scale
+* Stop guessing capacity
+* Icrease speed and agility
+* Stop spending money running and maintaining data centers
+* Go global in minutes, leverage the AWS global infrastructure
 
 #### Cloud deployment models:
 * **Cloud-Based deployment**: Run all parts of the application in the cloud, migrate existing applications to the cloud, design and build new applications in the cloud.
