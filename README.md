@@ -341,7 +341,7 @@ Is a content delivery service. It uses a network of edge locations to cache cont
  ***<div align="center">Amazon Elastic Block Store (Amazon EBS)</div>***
   **<div align="center">Block storage</div>**
 
-is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+Is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
 you define configuration as volume size and type
 
 > An Amazon EBS volume stores data in a single Availability Zone.
@@ -355,7 +355,7 @@ you define configuration as volume size and type
  ***<div align="center">Amazon Simple Storage Service (Amazon S3)</div>***
   **<div align="center">Object storage</div>**
 
- is a service that provides object-level storage. Amazon S3 stores data as objects in buckets. Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB. You can also use the Amazon S3 versioning feature to track changes to your objects over time.
+ Is a service that provides object-level storage. Amazon S3 stores data as objects in buckets. Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB. You can also use the Amazon S3 versioning feature to track changes to your objects over time.
  
 In **object storage**, each object consists of data (image, video, text document, or any other type of file), metadata (information about what the data is, how it is used, the object size, and so on), and a key (unique identifier).
 
@@ -428,7 +428,7 @@ Is a key-value database service. It delivers single-digit millisecond performanc
 
  ***<div align="center">Amazon Redshift</div>***
   **<div align="center">Data Warehouse</div>**
-is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
+Is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
 
 <div align="center">
 <img width="50" alt="image"src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/382dc1de-f512-44bf-baba-c5eff58725c0">
@@ -436,7 +436,7 @@ is a data warehousing service that you can use for big data analytics. It offers
 
  ***<div align="center">AWS Database Migration Service (AWS DMS)</div>***
 
-enables you to migrate relational databases, nonrelational databases, and other types of data stores. With AWS DMS, you move data between a source database and a target database. The source and target databases can be of the same type or different types. During the migration, your source database remains operational, reducing downtime for any applications that rely on the database. There could be homogeneos or hetereogeneous migration. Other use cases:
+Enables you to migrate relational databases, nonrelational databases, and other types of data stores. With AWS DMS, you move data between a source database and a target database. The source and target databases can be of the same type or different types. During the migration, your source database remains operational, reducing downtime for any applications that rely on the database. There could be homogeneos or hetereogeneous migration. Other use cases:
    * Development and test database migrations
    * Database consolidation:  Combining several databases into a single database
    * Continuous replication
