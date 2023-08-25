@@ -98,13 +98,13 @@ Provide near-limitless **scale**
 * **Hybrid deployment**: Connect cloud-based resources to on-premises infrastructure, integrate cloud-based resources with legacy IT applications.
 
 
+ ### ***<div align="center">Compute Services</div>***
+*<div align="center">💵 Pay for compute time</div>*
+
 
 <div align="center">
   <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/9b8758c7-f536-48fe-94f7-93da01b4aeda">
 </div>
-
-***<div align="center">Compute Services</div>**
-**<div align="center">💲 Pay for compute time</div>*
 
 
  ***<div align="center">Amazon elastic compute cloud (EC2)</div>***
@@ -354,8 +354,8 @@ Is a content delivery service. It uses a network of edge locations to cache cont
 # Storage and databases
 <details>
 
-***<div align="center">Storage Services</div>**
-**<div align="center">💲 Pay for data store in the cloud</div>*
+### ***<div align="center">Storage Services</div>***
+*<div align="center">💵 Pay for data store in the cloud</div>*
    
 * 🗃️ **Instance Store** is a block level storage volumes that behave like a physical drives, provides temporary storage for an Amazon EC2 instance, is physically attached to the host computer for an EC2 instance, therefore has the same lifespan ***When the instance is terminated, you lose any data in the instance store.***
 
