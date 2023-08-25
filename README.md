@@ -109,6 +109,9 @@ Provide near-limitless **scale**
 
  ***<div align="center">Amazon elastic compute cloud (EC2)</div>***
  ***<div align="center">📙 Host traditional applications, full access to the OS</div>***
+ *<div align="center">🚩 Region-scoped service</div>*
+ *<div align="center">🏗️ Infrastructure as a service</div>*
+ 
 The AWS service provides access to virtual servers. It's highly flexible, cost-effective, and quick (secure, compute rezible capacity). AWS builds and secure the datacenters, puchase and install sesrvers, and the servers are online and ready to use.
 With EC2 instances you are responsable for patching your instances when new software packages come out, setting up the scaling of those instances as well as ensuring that you've architected your solutions to be hosted in a highly available manner. 
 * Multitenancy: sharing underlying hardware between virtual machines. is manage by AWS
@@ -251,9 +254,11 @@ other manage tools you can manage your AWS environment
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/06f49308-f227-4bd8-9268-320117cc0d5b">
 </div>
 
-   
-**AWS Elastic Beanstalk**
-is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you.
+ ***<div align="center">AWS Elastic Beanstalk</div>***
+ *<div align="center">🚩 Region-scoped service</div>*
+ *<div align="center">🏛️ Platform as a service</div>*
+
+Is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you.
 Helps you to focus on your business application, not the infrastructure.
 * Adjust capacity
 * Load balancing
@@ -263,8 +268,9 @@ Helps you to focus on your business application, not the infrastructure.
 <div align="center">
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/01ee8c6e-33f1-4805-90d8-85f3404c2324">
 </div>
-   
-**AWS Cloud formation**
+
+ ***<div align="center">AWS Cloud formation</div>***
+
 Is a Infrastructure as code tool, used to define a wide variety of AWS resources. Suport storage, database, analytics, machine learning.
 
  </details>
@@ -322,7 +328,9 @@ The VPC component that checks packet permissions for subnets is a **network acce
 </div>
 
  ***<div align="center">Amazon Route 53</div>***
- is a DNS web service. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other domain registrars. This enables you to manage all of your domain names within a single location.
+ *<div align="center">🌎 Global service</div>*
+ 
+ Is a DNS web service. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other domain registrars. This enables you to manage all of your domain names within a single location.
  * **DNS (Domain Name System):** You can think of DNS as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address.
 <div align="center">
    <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/57d0bf3d-98bf-44eb-82af-39af246cbecf">
@@ -340,7 +348,8 @@ The VPC component that checks packet permissions for subnets is a **network acce
 <img width="50" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/1a72d0e4-7b66-42e7-bac9-86b5a569d21e">
 </div>
 
- ***<div align="center">Amazon Cloud front</div>***
+ ***<div align="center">Amazon CloudFront</div>***
+ *<div align="center">🌎 Global service</div>*
 
 Is a content delivery service. It uses a network of edge locations to cache content and deliver it to customers all over the world.
 
@@ -496,6 +505,8 @@ Enables you to migrate relational databases, nonrelational databases, and other 
 </div>
 
  ***<div align="center">AWS Identity and Access Management</div>***
+ *<div align="center">🌎 Global service</div>*
+ 
 
  IAM enables you to manage access to AWS services and resources securely.
 
