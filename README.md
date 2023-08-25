@@ -124,8 +124,10 @@ With EC2 instances you are responsable for patching your instances when new soft
 🚀 Operating system: you can choose eaither Windows or Linux </br>
 🚀 Aplication(s) server: Software running on the instance Internal buisiness apps, web apps, Data bases, thir-part applications...</br>
 🚀 Instance type</br>
-* Vertical Scaling: EC2 instances are also resizable. You might start with a small instance, realize the application you are running is starting to max out that server, and then you can give that instance more memory and more CPU.</br>
+* Vertical Scaling: EC2 instances are also resizable. You might start with a small instance, realize the application you are running is starting to max out that server, and then you can give that instance more memory and more CPU. </br>
+
 🚀Control over the Networking: Type of requests</br>
+🚀 How much storage space; network attached (EBS & EFS, hardware (EC2 instance store)
 
 ### Amazon EC2 types (families):
 Each Amazon EC2 instance type is grouped under an instance family and optimized for certain types of tasks. Instance types offer varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.
