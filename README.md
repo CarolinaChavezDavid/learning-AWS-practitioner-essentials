@@ -78,6 +78,11 @@ Provide near-limitless **scale**
 * **Platform as a services (PaaS)** Removes the need for your organization to manage the underlying infrastructure.
 * **Software as a Service (SaaS)** Compled product that is run and managed by the services provider.
 
+
+<div align="center">
+  <img width="500" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/47901b9a-75cb-4868-b8ef-56f3f43b480e">
+</div>
+
 #### Cloud Computing advantages:
 
 * Trade capital expense (CAPEX)for operational expense (OPEX). Reduce total cost of ownership (TCO)
