@@ -155,6 +155,11 @@ Each Amazon EC2 instance type is grouped under an instance family and optimized 
 Is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. For example, if you have multiple Amazon EC2 instances, elastic load balancing distributes the workload across the multiple instances so that no single instance has to carry the bulk of it. 
 Properly distribute traffic; high performance, cost-efficient, highly available, automatically scalable 
 
+* Application Load Balancer (HTTP/HTTPS only) - Layer 7
+* Network Load Balancer (ultra-high performace, allow for TCP) - Layer 4
+* Gateway Load Balancer - Layer 3
+* Classic Load Balancer (retired 2023) - Layer 4 & 7
+
 <div class="row" align="center">
     <img width="450" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/ee9834e8-4235-4c9e-87c0-3aa2ce7159f2">
 </div>
@@ -275,6 +280,19 @@ Helps you to focus on your business application, not the infrastructure.
 
 Is a Infrastructure as code tool, used to define a wide variety of AWS resources. Suport storage, database, analytics, machine learning.
 
+
+**AMI (Amazon machine images)** 
+
+You can use AMIs to add your own software license, operating system and configurations.
+
+You cannot use AMIs to add your IP addresses. IP addresses are added to an instance as you create it.
+
+* EC2 Image Builder is an automated pipeline for the creation, maintenance, validation, sharing, and deployment of Linux or Windows images for use on AWS and on-premises.
+
+**FSx**
+
+Amazon FSx makes it easy and cost effective to launch and run popular file systems that are fully managed by AWS. It comes in two offerings: FSx for Windows File Server (used for business applications), and FSx for Lustre (used for high-performance computing).
+
  </details>
 
 # Networking
@@ -371,7 +389,7 @@ Is a content delivery service. It uses a network of edge locations to cache cont
 ### ***<div align="center">Storage Services</div>***
 *<div align="center">💵 Pay for data store in the cloud</div>*
    
-* 🗃️ **Instance Store** is a block level storage volumes that behave like a physical drives, provides temporary storage for an Amazon EC2 instance, is physically attached to the host computer for an EC2 instance, therefore has the same lifespan ***When the instance is terminated, you lose any data in the instance store.***
+* 🗃️ **Instance Store** is a block level storage volumes that behave like a physical drives, provides temporary storage for an Amazon EC2 instance, is physically attached to the host computer for an EC2 instance, therefore has the same lifespan. EC2 Instance Store has a better I/O performance, but data is lost if: the EC2 instance is stopped or terminated, or when the underlying disk drive fails. ***When the instance is terminated, you lose any data in the instance store.***
 
 > Amazon EC2 instances are virtual servers. If you start an instance from a stopped state, the instance might start on another host, where the previously used instance store volume does not exist.
 
@@ -384,6 +402,7 @@ Is a content delivery service. It uses a network of edge locations to cache cont
 
 Is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
 you define configuration as volume size and type
+An EBS Volume is a network drive you can attach to your instances while they run, so your instances' data persist even after their termination.
 
 > An Amazon EBS volume stores data in a single Availability Zone.
 
