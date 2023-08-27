@@ -341,6 +341,7 @@ The VPC component that checks packet permissions for subnets is a **network acce
 
 
 **Routing policies**
+Route is a table that contains a set of rules, called routes, that is use to determine where network traffic from your subnet or getaway is directed. Use public subnets for internet connected resources and private subnets for resources not connected to the internet.
 * Latency-based routing
 * Geolocation DNS
 * Geoproximity routing
