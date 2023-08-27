@@ -147,6 +147,9 @@ Each Amazon EC2 instance type is grouped under an instance family and optimized 
 ### Scalability and Elasticity:
 **Scalability** involves beginning with only the resources you need and designing your architecture to automatically respond to changing demand by scaling out or in. 
 * **Amazon EC2 Auto Scaling:** This is a service provided for Amazon EC2 instances that allows the scaling process to happen automatically. Auto-scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.
+
+  > ⚠️ An Auto Scaling Group (ASG) can automatically and quickly scale-in and scale-out to match the changing load on your applications and websites.
+  
   * **Dynamic scaling** responds to changing demand.
   * **Predictive scaling** automatically schedules the right number of Amazon EC2 instances based on predicted demand.
   * When configuring the size of an auto scaling group, you can set ***minimum capacity***, ***Desired capacity*** and ***Maximum capacity***
@@ -156,7 +159,7 @@ Is the AWS service that automatically distributes incoming application traffic a
 Properly distribute traffic; high performance, cost-efficient, highly available, automatically scalable 
 
 * Application Load Balancer (HTTP/HTTPS only) - Layer 7
-* Network Load Balancer (ultra-high performace, allow for TCP) - Layer 4
+* **Network Load Balancer** (ultra-high performace, allow for TCP) - Layer 4. A Network Load Balancer can handle millions of requests per second with low-latency
 * Gateway Load Balancer - Layer 3
 * Classic Load Balancer (retired 2023) - Layer 4 & 7
 
