@@ -291,7 +291,8 @@ Is essentially your own private network in AWS. A VPC allows you to define your 
 *  **Subnets** A subnet is a section of a VPC in which you can group resources based on security or operational needs. Subnets can be public or private. 
    * **Public subnets** contain resources that need to be accessible by the public, such as an online store’s website.
    * **Private subnets** contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories. 
-* 🚪 **Internet Gateway** allow public traffic from the internet to access your VPC. Provide a target in your VPC route tables for internet-routable traffic and perform NAT for instances that have been assing public IPv4 addresses.
+* 🚪 **Internet Gateway** allow public traffic from the internet to access your VPC. Provide a target in your VPC route tables for internet-routable traffic and perform NAT for instances that have been assing public IPv4 and IPv6 addresses.
+  
 <div align="center">
   <img width="800" alt="image" src="https://github.com/CarolinaChavezDavid/learning-AWS-practitioner-essentials/assets/77591347/5a7aa22c-b80d-4fac-9452-82f663b5ceeb">
 </div>
