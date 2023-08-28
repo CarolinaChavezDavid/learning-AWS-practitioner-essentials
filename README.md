@@ -819,6 +819,7 @@ When considering the security of your architecture, apply these best practices:
    * Automate security best practices when possible.
    * Apply security at all layers.
    * Protect data in transit and at rest.
+   * Eneable traceability.
 * **Reliability** the ability of a workload to consistently and correctly perform its intended functions
    * Recover from infrastructure or service disruptions
    * Dynamically acquire computing resources to meet demand
