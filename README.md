@@ -332,6 +332,8 @@ Is essentially your own private network in AWS. A VPC allows you to define your 
 
 **NAT getaway** is a network address translation (NAT) service. With a NAT getway instances in a private subnet can connect services outside your VPC. External services cannot initiate a connection with those instances.
 
+* **Transit Gateway** connects thousands of VPC and on-premises networks together in a single gateway.
+
 **Security group** is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance. By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom rules to configure which traffic should be allowed or denied.
 
 
