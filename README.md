@@ -516,6 +516,8 @@ Enables you to migrate relational databases, nonrelational databases, and other 
 * **AWS Glue** is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytic.
   * The AWS Glue Data Catalog is a central repository to store structural and operational metadata for all your data assets. For a given data set, you can store its table definition, physical location, add business relevant attributes, as well as track how this data has changed over time. 
 * **Amazon EMR** is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. EMR helps creating Hadoop clusters (Big Data) to analyze and process vast amount of data
+* **Amazon Athena** is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Even though Athena can be used for business analytics, it does not provide interactive dashboards.
+* **Amazon QuickSight** is a fast, cloud-powered business intelligence (BI) service that makes it easy for you to deliver insights to everyone in your organization. You can create and publish interactive dashboards.
 
 </details>
 
