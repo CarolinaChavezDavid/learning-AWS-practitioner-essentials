@@ -870,5 +870,8 @@ The AWS Cloud global footprint enables you to quickly deploy applications to cus
 
 * **AWS Device Farm** is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure
 * **AWS IoT** Core lets you securely connect IoT devices to the AWS Cloud and other devices without the need to provision or manage servers.
+* AWS Backup is a centralized backup service that makes it easy and cost-effective for you to backup your application data across AWS services in the AWS Cloud. CloudEndure Disaster Recovery minimizes downtime and data loss by providing fast, reliable recovery into AWS of your physical, virtual, and cloud-based servers.
+* **Amazon WorkSpaces** is a fully managed, secure cloud desktop service. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe.
+* The AWS Well-Architected Tool helps you review the state of your workloads and compares them to the latest AWS architectural best practices. It is based on the 6 pillars of the Well-Architected Framework (Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability). AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices (Cost Optimization, Performance, Security, Fault Tolerance, and Service Limits).
    
 </details>
