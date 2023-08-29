@@ -518,6 +518,7 @@ Enables you to migrate relational databases, nonrelational databases, and other 
 * **Amazon EMR** is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. EMR helps creating Hadoop clusters (Big Data) to analyze and process vast amount of data
 * **Amazon Athena** is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Even though Athena can be used for business analytics, it does not provide interactive dashboards.
 * **Amazon QuickSight** is a fast, cloud-powered business intelligence (BI) service that makes it easy for you to deliver insights to everyone in your organization. You can create and publish interactive dashboards.
+* AWS CodeArtifact is a fully managed artifact repository (also called code dependencies) service that makes it easy for organizations of any size to securely store, publish, and share software packages used in their software development process.
 
 </details>
 
