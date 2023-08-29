@@ -865,5 +865,9 @@ Cloud computing in data centers often requires you to spend more money and time 
 A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers.
 * **Go global in minutes.**
 The AWS Cloud global footprint enables you to quickly deploy applications to customers around the world, while providing them with low latency.
+
+### Other services
+
+* **AWS Device Farm** is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure
    
 </details>
