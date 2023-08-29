@@ -869,5 +869,6 @@ The AWS Cloud global footprint enables you to quickly deploy applications to cus
 ### Other services
 
 * **AWS Device Farm** is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure
+* **AWS IoT** Core lets you securely connect IoT devices to the AWS Cloud and other devices without the need to provision or manage servers.
    
 </details>
